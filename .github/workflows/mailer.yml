@@ -36,7 +36,7 @@ jobs:
               "search_subject": "Прайс-лист",
               "recipients": ${{ secrets.RECIPIENTS }},
               "email_subject": "Актуальный прайс-лист",
-              "email_body": "Добрый день!\n\nВо вложении актуальный прайс-лист.\n\nС уважением."
+              "email_body": ""
           }' > config.json
       - name: 4. Run the mailer script
         run: python price_mailer/run/price_mailer.py
