@@ -148,7 +148,7 @@ def send_email(cfg: dict, attachment_path: Path):
     recipients = cfg["recipients"]
     from_address = os.environ.get("FROM_ADDRESS", smtp_cfg.get("from_address", sender_login))
     subject = cfg.get("email_subject", "Актуальный прайс-лист")
-    body = cfg.get("email_body", "Добрый день!\n\nВо вложении актуальный прайс-лист.\n\nС уважением.")
+    #body = cfg.get("email_body", "Добрый день!\n\nВо вложении актуальный прайс-лист.\n\nС уважением.")#
 
     log.info(f"[SMTP] Подключаюсь к {smtp_cfg['server']}:{smtp_cfg['port']}...")
     log.info(f"[SMTP] Отправитель: {from_address}")
