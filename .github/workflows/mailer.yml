@@ -3,7 +3,7 @@ on:
   schedule:
     # Запускать каждый день в 2:55 UTC (это 5:55 МСК)
        - cron: '0 6 * * *' # 05:55 МСК   
-       timezone: 'Europe/Moscow'
+         timezone: 'Europe/Moscow'    
   workflow_dispatch:
     # Позволяет запускать воркфлоу вручную из интерфейса GitHub Actions
 jobs:
